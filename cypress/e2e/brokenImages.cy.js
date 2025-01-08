@@ -24,7 +24,7 @@ describe ('Broken_Images', () => {
         .should('have.css', 'height', '90px')
     })
 
-    it.only ('Verify broken images on the page', () => {
+    it ('Verify broken images on the page', () => {
         cy.visit ('/broken_images')
         cy.get('.example')
         .find('img')
