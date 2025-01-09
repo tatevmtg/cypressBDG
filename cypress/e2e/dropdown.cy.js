@@ -5,14 +5,14 @@ describe ('Dropdown', () => {
         cy.url().should('include', 'dropdown')
     })
 
-    it ('Verify the dropdown menu on the page', () => {
+    it.only ('Verify the dropdown menu on the page', () => {
         cy.visit ('/dropdown')
         cy.get('.example')
         .find('#dropdown')
         .should('be.visible')
     })
 
-    it.only ('Verify the 2 dropdown options', () => {
+    it('Verify the 2 dropdown options', () => {
         cy.visit ('/dropdown')
         cy.get('#dropdown').select('Option 1')
         .should('have.value', '1')
@@ -20,7 +20,7 @@ describe ('Dropdown', () => {
         .should('have.value', '2')
     })
     
-    it.only ('Verify there are 3 dropdown options', () => {
+    it ('Verify there are 3 dropdown options', () => {
         cy.visit ('/dropdown')
         cy.get('#dropdown').select('Option 1')
         .should('have.value', '1')
