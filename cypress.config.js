@@ -1,10 +1,8 @@
 const { defineConfig } = require("cypress");
+require('dotenv').config()
 
 module.exports = defineConfig({
-  e2e: {
-    baseUrl: 'https://the-internet.herokuapp.com/',
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
+  e2e: { 
+    baseUrl: process.env.globalUrl,
     },
-  },
-});
+  });
