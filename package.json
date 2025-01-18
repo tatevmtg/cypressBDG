@@ -10,7 +10,9 @@
   "devDependencies": {
     "cypress": "^13.17.0",
     "cypress-dotenv": "^3.0.1",
-    "dotenv": "^16.4.7"
+    "cypress-downloadfile": "^1.2.4",
+    "dotenv": "^16.4.7",
+    "node-xlsx": "^0.24.0"
   },
   "dependencies": {
     "aggregate-error": "^3.1.0",
@@ -87,6 +89,7 @@
     "has-flag": "^4.0.0",
     "has-symbols": "^1.1.0",
     "hasown": "^2.0.2",
+    "hover": "^3.0.0-alpha.6",
     "http-signature": "^1.4.0",
     "human-signals": "^1.1.1",
     "ieee754": "^1.2.1",
@@ -175,5 +178,6 @@
     "wrappy": "^1.0.2",
     "yauzl": "^2.10.0"
   },
-  "description": ""
+  "description": "",
+  "keywords": []
 }
