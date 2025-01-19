@@ -1,10 +1,13 @@
 const { defineConfig } = require("cypress");
+const { downloadFile } = require("cypress-downloadfile/lib/addPlugin");
+require("dotenv").config();
 
 module.exports = defineConfig({
   e2e: {
-    baseUrl: "https://the-internet.herokuapp.com",
+    baseUrl: process.env.globalUrl,
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      // Register the downloadFile task
+      on("task", { downloadFile });
     },
   },
 });
