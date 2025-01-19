@@ -1,14 +1,14 @@
 
 class AddRemoveElements {
 
-  NAMES = {
-      contentText:"Add/Remove Elements",
-      
-    }
+    NAMES = {
+        contentText:"Add/Remove Elements",
+        
+      }
 
-  LOCATORS = {
-    content: '#content'
-  }
+    LOCATORS = {
+      content: '#content'
+    }
 
 }
 
