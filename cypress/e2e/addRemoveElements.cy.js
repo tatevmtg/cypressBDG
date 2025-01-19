@@ -43,11 +43,10 @@ describe ('Add_Remove_Elements', () => {
     
   })
 
-  it.only ('Click add element button 10times', () => {
+  it ('Click add element button 10times', () => {
     cy.visit('/add_remove_elements/')
     Cypress._.times(10, () => {
-      cy.contains('Add Element').click({ force: true })
-      cy.wait(400)
+      cy.contains('Add Element').click({ force: true }, {timeout: 400})
   })
     cy.get('.added-manually')
       .its('length')
