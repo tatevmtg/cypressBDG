@@ -49,6 +49,9 @@ class BasePage {
     LOCATORS={
         content:'#content'
     }
+    getTitlesRow(){
+        return cy.get(".example")
+    }
 }
 
 export const basePage=new BasePage;
