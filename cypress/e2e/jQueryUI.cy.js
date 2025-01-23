@@ -1,12 +1,12 @@
 import { jQueryUI } from "../Pages/jQuery";
 
 jQueryUI;
-describe("JQueryUI - Menu", () => {
+describe ("JQueryUI - Menu", () => {
   beforeEach(() => {
     cy.visit("/");
     cy.contains(jQueryUI.NAMES.contentTest).click();
   });
-  it("Verify CSV download functionality", () => {
+  it ("Verify CSV download functionality", () => {
     const downloadFolder = jQueryUI.LOCATORS.CSVFileFolder;
     const fileName = jQueryUI.NAMES.CSVFileName;
     const fileUrl = jQueryUI.LOCATORS.CSVFileUrl;
