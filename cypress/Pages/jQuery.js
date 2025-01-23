@@ -9,7 +9,6 @@ class JQueryUI {
     CSV: "CSV",
     excel: "Excel",
     CSVFileName: "menu",
-
   };
 
   LOCATORS = {
@@ -18,9 +17,9 @@ class JQueryUI {
     PDF: "#ui-id-5",
     CSV: "#ui-id-6",
     excel: "#ui-id-7",
-    CSVFileUrl: "https://the-internet.herokuapp.com/download/jqueryui/menu/menu.csv",
-    CSVFileFolder: "C:\Users\Tatev\Downloads",
-    
+    CSVFileUrl:
+      "https://the-internet.herokuapp.com/download/jqueryui/menu/menu.csv",
+    CSVFileFolder: "C:UsersTatevDownloads",
   };
 }
 
